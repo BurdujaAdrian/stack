@@ -18,7 +18,7 @@ public:
 
 StackNode* newNode(int data)
 {
-    StackNode* stackNode = new StackNode();
+    StackNode* stackNode = (StackNode*)malloc(sizeof(data)) ;
     stackNode->data = data;
     stackNode->next = NULL;
     stacksize++;
